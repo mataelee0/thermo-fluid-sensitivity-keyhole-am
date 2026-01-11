@@ -22,7 +22,9 @@ The solver directory contains source code for compiling the laserbeamFoam-based 
 1. Navigate to the solver directory:
 cd solver
 2. Compile the solver:
+```bash
 wmake
+```
 
 After successful compilation, the solver can be executed using:
    laserbeamFoam
