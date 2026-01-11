@@ -34,7 +34,7 @@ cd solver
 ```
 2. Compile the solver:
 ```bash
-wmake
+./Allwmake
 ```
 
 After successful compilation, the solver can be executed using:
