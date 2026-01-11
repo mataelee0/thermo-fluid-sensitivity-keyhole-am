@@ -20,8 +20,10 @@ keyhole depth in metal additive manufacturing.
 ## Solver compilation
 The solver directory contains source code for compiling the laserbeamFoam-based solver.
 1. Navigate to the solver directory:
+```bash
 cd solver
-2. Compile the solver:
+```
+3. Compile the solver:
 ```bash
 wmake
 ```
@@ -43,13 +45,18 @@ must be specified for each case.
 From within either the run_stationary or run_scanning directory,
 execute the following commands:
 1. Generate the computational mesh:
+```bash
 blockMesh
+```
 2. Initialize fields:
+```bash
 cp -r initial/ 0/
 setFields
+```
 3. Decompose the domain for parallel execution:
-   decomposePar
-
+```bash
+decomposePar
+```
 
 ## Solver execution
 Serial execution:
