@@ -18,7 +18,16 @@ keyhole depth in metal additive manufacturing.
 
 
 ## Solver compilation
-The solver directory contains source code for compiling the laserbeamFoam-based solver.
+The solver directory contains source code for compiling the
+laserbeamFoam-based solver.
+
+Before compilation, the include path to the `laserHeatSource` library
+installed with laserbeamFoam must be specified in the solver build options.
+
+Specifically, the path to `laserHeatSource/lnInclude` should be added
+to the `EXE_INC` entry in the `Make/options` file.
+The correct path can be identified from the local laserbeamFoam installation.
+
 1. Navigate to the solver directory:
 ```bash
 cd solver
