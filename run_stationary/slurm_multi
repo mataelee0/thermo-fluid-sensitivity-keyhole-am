@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=32      # Cores per node
+#SBATCH --partition=ALL          # Partition Name
+##
+#SBATCH --job-name=scan_test
+#SBATCH --time=50-24:00:00           # Runtime: HH:MM:SS
+##
+
+
+cd $SLURM_SUBMIT_DIR
+
+
+mpirun -np 32 laserbeamFoam -parallel >& log
+
+
