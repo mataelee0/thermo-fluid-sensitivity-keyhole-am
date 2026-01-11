@@ -62,4 +62,6 @@ decomposePar
 Serial execution:
    laserbeamFoam
 Parallel execution (example using 32 processors):
-   mpirun -np 32 laserbeamFoam -parallel >& log
+```bash
+mpirun -np 32 laserbeamFoam -parallel >& log
+```
