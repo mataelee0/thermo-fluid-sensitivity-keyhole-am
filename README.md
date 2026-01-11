@@ -32,6 +32,7 @@ After successful compilation, the solver can be executed using:
 Simulation cases are provided in the following directories:
 - run_stationary
 - run_scanning
+
 Before running the simulations, appropriate thermophysical properties
 must be specified for each case.
 
