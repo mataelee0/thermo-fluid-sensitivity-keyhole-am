@@ -32,16 +32,18 @@ The correct path can be identified from the local laserbeamFoam installation.
 ```bash
 cd solver
 ```
-3. Compile the solver:
+2. Compile the solver:
 ```bash
 wmake
 ```
 
 After successful compilation, the solver can be executed using:
+```bash
    laserbeamFoam
+```
 
 
-# Case setup and execution
+## Case setup and execution
 Simulation cases are provided in the following directories:
 - run_stationary
 - run_scanning
@@ -50,7 +52,7 @@ Before running the simulations, appropriate thermophysical properties
 must be specified for each case.
 
 
-## Running a simulation
+### Running a simulation
 From within either the run_stationary or run_scanning directory,
 execute the following commands:
 1. Generate the computational mesh:
@@ -67,7 +69,7 @@ setFields
 decomposePar
 ```
 
-## Solver execution
+### Solver execution
 Serial execution:
    laserbeamFoam
 Parallel execution (example using 32 processors):
